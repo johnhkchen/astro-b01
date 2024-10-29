@@ -1,0 +1,14 @@
+---
+export const prerender = false;
+export const partial = true;
+const profile = {
+  username: "johndoe",
+  email: "johndoe@example.com",
+  bio: "Software developer with a passion for open-source projects."
+};
+---
+
+<div id="profile" class="flex flex-col items-center">
+  <h1>User Profile</h1>
+  <o>{JSON.stringify(profile, null, 2)}</p>
+</div>

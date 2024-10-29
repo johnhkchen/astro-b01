@@ -1,0 +1,13 @@
+---
+import LoginPage from '../components/LoginPage.astro';
+import AdminDashboard from '../components/AdminDashboard.astro';
+
+let isAuthenticated = true;
+let token = null;
+---
+
+{!isAuthenticated ? (
+  <LoginPage />
+) : (
+  <AdminDashboard />
+)}

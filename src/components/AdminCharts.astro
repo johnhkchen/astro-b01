@@ -1,0 +1,12 @@
+---
+import ChartComponent from './ChartComponent.astro';
+---
+
+<h1 class="text-3xl font-bold mb-4">Admin Dashboard</h1>
+<pre class="bg-base-100 p-4 rounded-lg shadow-md">{JSON.stringify({})}</pre>
+
+<!-- Visualizations -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+  <ChartComponent chartName="Chart 1" />
+  <ChartComponent chartName="Chart 2" />
+</div>
